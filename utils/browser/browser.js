@@ -6,17 +6,23 @@ puppeteer.use(StealthPlugin());
 
 async function startBrowser() {
   let browser;
+  const options = {
+    width:1920,
+    height: 1080
+  }
   try {
  
     console.log("Opening the browser......");
 
     browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: [
         "--disable-setuid-sandbox",
-        "--start-maximized",
+        '--no-sandbox',
+        // "--start-maximized",
         "--ignore-certificate-errors",
         "--ignore-certificate-errors-spki-list",
+        `--window-size=${options.width},${options.height}`
       ],
       ignoreHTTPSErrors: true,
     });
