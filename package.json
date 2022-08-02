@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "start": " nodemon test.js",
     "heroku-postbuild": "npm install"
@@ -17,6 +16,7 @@
     "fs": "^0.0.1-security",
     "google-spreadsheet": "^3.3.0",
     "googleapis": "^105.0.0",
+    "morgan": "^1.10.0",
     "puppeteer": "^15.5.0",
     "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-stealth": "^2.11.0",
