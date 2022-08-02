@@ -5,8 +5,8 @@
   "main": "index.js",
 
   "scripts": {
-    "start": "NODE_ENV=production nodemon test.js",
-    "heroku-postbuild": "  npm install "
+    "start": " nodemon test.js",
+    "heroku-postbuild": "npm install"
   },
   "keywords": [],
   "author": "",
