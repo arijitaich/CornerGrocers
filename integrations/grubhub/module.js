@@ -97,6 +97,7 @@ const addItem = async (page,itemObj) => {
 
 
     await (await page.$x(ADD_ITEM_BUTTON_XPATH))[0].click() 
+    console.log("addition process started")
   
 
    // await page.waitForNavigation({waitUntil:'networkidle2'}) 
@@ -108,7 +109,7 @@ const addItem = async (page,itemObj) => {
     })
     await page.type(ITEM_NAME_SELECTOR,itemObj.modifierName) // Add modifier  name 
     console.log('modifier name added')
-    
+
     await page.screenshot({
       path: './s5.png',
       fullPage: true,
