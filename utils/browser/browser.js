@@ -31,6 +31,7 @@ async function startBrowser() {
   }
   return browser;
 }
+
 module.exports = {
   startBrowser,
 };
